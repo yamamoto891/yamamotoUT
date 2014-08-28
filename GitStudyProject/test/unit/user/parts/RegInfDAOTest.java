@@ -86,7 +86,7 @@ public class RegInfDAOTest {
 	@Test
 	public void test002_001() {
 		
-		System.out.println("Œ±€–Ú: UT002-001");
+		System.out.println("Œ±€–Ú: test002_001");
 		
 		dao.insert("001","—é–Ø‘¾˜Y","35");
 		dao.insert("002","Tommy","25");
@@ -113,7 +113,7 @@ public class RegInfDAOTest {
 	@Test
 	public void test002_002() {
 		
-		System.out.println("Œ±€–Ú: UT002-002");
+		System.out.println("Œ±€–Ú: test002_002");
 		
 		dao.insert("001","—é–Ø‘¾˜Y","35");
 		dao.insert("002","Tommy","25");
@@ -143,7 +143,7 @@ public class RegInfDAOTest {
 	@Test
 	public void test002_003() {
 		
-		System.out.println("Œ±€–Ú: UT002-003");
+		System.out.println("Œ±€–Ú: test002_003");
 		
 		dao.insert("001","—é–Ø‘¾˜Y","35");
 		dao.insert("002","Tommy","25");
