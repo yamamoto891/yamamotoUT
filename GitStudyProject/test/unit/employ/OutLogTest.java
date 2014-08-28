@@ -15,6 +15,8 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 
+import employ.OutLog;
+
 
 public class OutLogTest extends TestCase{
 
@@ -28,8 +30,6 @@ public class OutLogTest extends TestCase{
 	String result = NG;
 	
 	File file = null;
-	
-	employ.OutLog bean = null;
 	
 	
 	@AfterClass
@@ -59,10 +59,8 @@ public class OutLogTest extends TestCase{
 
 	@Test
 	public void test003_001() {
-		
-		bean = new employ.OutLog();
 
-		bean.outLogDmp("sample：サンプル");
+		OutLog.outLogDmp("sample：サンプル");
 		
 		FileReader fr=null;
 		BufferedReader br=null;
@@ -99,10 +97,8 @@ public class OutLogTest extends TestCase{
 
 	@Test
 	public void test003_002() {
-		
-		bean = new employ.OutLog();
 
-		bean.outLogDmp(12345);
+		OutLog.outLogDmp(12345);
 		
 		FileReader fr=null;
 		BufferedReader br=null;

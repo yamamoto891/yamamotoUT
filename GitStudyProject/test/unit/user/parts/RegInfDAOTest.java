@@ -1,6 +1,7 @@
 package unit.user.parts;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.fail;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import user.bean.RegistrantInfo;
+import user.parts.RegInfDAO;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
@@ -28,7 +30,7 @@ public class RegInfDAOTest {
 	final String DEF_3 = "003,ŽR“c‰ÔŽq,30";
 	
 	List<RegistrantInfo> list = null;
-	user.parts.RegInfDAO dao = null;
+	RegInfDAO dao = null;
 	
 	final String OK = "OK";
 	final String NG = "NG";
@@ -58,7 +60,7 @@ public class RegInfDAOTest {
 	@Before
 	public void setUp() throws Exception {
 					
-		dao = new user.parts.RegInfDAO();
+		dao = new RegInfDAO();
 		list = dao.getReglist();
 		for(RegistrantInfo info : list){
 			dao.delete(info.getrId());

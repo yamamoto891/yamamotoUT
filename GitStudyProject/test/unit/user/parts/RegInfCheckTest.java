@@ -1,12 +1,13 @@
 package unit.user.parts;
 
-import static org.junit.Assert.*;
 import junit.framework.TestCase;
 
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
+
+import user.parts.RegInfCheck;
 
 
 public class RegInfCheckTest  extends TestCase{
@@ -16,7 +17,7 @@ public class RegInfCheckTest  extends TestCase{
 	
 	String result = NG;
 	
-	user.parts.RegInfCheck bean = null;
+	RegInfCheck bean = null;
 	
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
@@ -25,7 +26,7 @@ public class RegInfCheckTest  extends TestCase{
 	@Before
 	public void setUp() throws Exception {
 		result = NG;
-		bean = new user.parts.RegInfCheck();
+		bean = new RegInfCheck();
 		System.out.println("ééå±çÄñ⁄: "+ getName());
 	}
 
